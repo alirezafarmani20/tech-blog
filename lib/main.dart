@@ -12,31 +12,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "tech blog",
-      home: Scaffold(
-        body: SafeArea(
-          child: Column(
-            children: [
-              Padding(
-                padding: EdgeInsets.all(12),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "hello world",
-                      style: TextStyle(fontSize: 20, color: Colors.red[500]),
-                    ),
-                    Text(
-                      "hello this is a test ext",
-                      style: TextStyle(fontSize: 20, color: Colors.green,fontWeight: FontWeight.bold),
-                    ),
-                    //Text("hello this is my new advencher")
-                  ],
-                ),
-              ),
-            ],
-          ),
+      home:Scaffold(
+        body: Column(
+          children: [
+            Text("hello world")
+          ],
         ),
-      ),
+      ) ,
     );
   }
 }
